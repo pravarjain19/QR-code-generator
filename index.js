@@ -12,5 +12,6 @@ function createQr(){
     var url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrtext.value}`;
     qrimg.src = url;
     imgbox.classList.add("show-img");
+    qrtext.value="";
     }
 }
